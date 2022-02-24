@@ -1,0 +1,33 @@
+git remote add orin 
+
+set-url 
+
+Git push -u origin “nome-do-arquivo” 
+
+Git-&-GitHub-O-que-é-e-para-que-serve
+
+dia-2-3-entendendo-os-comandos
+
+
+
+git status
+  295  cd..
+  296  cd ..
+  297  mkdir iniciando-git
+  298  git init
+  299  git status
+  300  ls
+  301  cd iniciando-git/
+  302  git init
+  303  git status
+  304  git add . 
+  305  git staus
+  306  git status
+  307  git commit -m "Mensagem sobre a alteração feita"
+  308  git add origin git@github.com:SabrinaColombiano/meu-super-repo.git
+  309  git remote add origin git@github.com:SabrinaColombiano/meu-super-repo.git
+  310  git remote -v
+  311  git status
+  312  git push origin master
+  313  history
+
