@@ -57,7 +57,77 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+      const h1 = document.createElement('h1');
+      h1.innerHTML = 'TrybeTrip - Agencia de Viagens'
+      h1.className = 'title'
+      document.body.appendChild(h1)
+
+      const mainContent = document.createElement('main');
+      mainContent.className = 'main-content'
+      document.body.appendChild(mainContent)
+
+      //3 - Adicione a tag section com a classe center-content como filho da tag main criada no passo 2
+      const centerContent = document.createElement('section');
+      centerContent.className = 'center-content';
+      mainContent.appendChild(centerContent);
+      
+      // 4 - Adicione a tag p como filha da section criada no passo 3 e coloque algum texto;
+      const paragraph = document.createElement('p');
+      paragraph.innerHTML = "Algum Texto";
+      centerContent.appendChild(paragraph);
+
+      // 5 - Adicione a tag section com a classe left-content como filha da tag main criada no passo 2;
+      const leftContest = document.createElement('section');
+      leftContest.className = 'left-content';
+      mainContent.appendChild(leftContest);
+
+       // 6 - Adicione a tag section com a classe right-content como filha da tag main criada no passo 2;
+       const rightContent = document.createElement('section');
+       rightContent.className = 'right-content';
+       mainContent.appendChild(rightContent);
+
+      // 7 - Adicione uma imagem com src configurado para valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho da section criada no passo 5; 
+      const img = document.createElement('img');
+      img.src = 'https://picsum.photos/200';
+      img.className = 'small-image';
+      leftContest.appendChild(img);
+
+       // 8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, e assim por diante. Essa lista deve ser filha da section criada no passo 6;
+       const ul = document.createElement('ul');
+       const numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+       for (let index = 0; index < numbers.length; index += 1) {
+          const li = document.createElement('li');
+          li.innerHTML = numbers [index];
+          ul.appendChild(li)
+       }
+       rightContent.appendChild(ul);
+
+       // 9 - Adicione 3 tags h3, todas filhas do main criado no passo 2.
+      
+       for (let index = 0; index < 3; index += 1) {
+        const h3 = document.createElement('h3');
+        h3.innerHTML = index;
+        mainContent.appendChild(h3);
+       }
+
+        // bonus - Adicione a classe title na tag h1 criada;
+        const title = document.querySelector('h3');
+        title.className = 'title';
+
+      // Adicione a classe description nas 3 tags h3 criadas;
+    const h3 = document.getElementsByTagName('h3');
+    for (let index = 0; index < 3; index += 1) {
+      h3[index].className = 'description';
+    }  
+
+       
+
+
+
+
+
+
     </script>
   </body>
 </html>

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+  }
+  
+  body { 
+    width: 80%;
+    background-color: #065220;
+    color: #ffffff;
+    padding: 50px;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  h2, input, button {
+    margin-bottom: 20px;
+  }
+  
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    border-radius: 5px;
+    height: 30px;
+    font-size: 25px;
+  }
+  
+  #name-id {
+    width: 50%;
+  }
+  
+  #number-id {
+    width: 50px;
+  }
+  
+  p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
